@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "nova-sdk-plugin-1inch"
+version = "0.1.0"
+description = "1inch plugin for nova SDK"
+authors = ["nova SDK Team"]
+readme = "README.md"
+keywords = ["nova", "sdk", "web3", "agents", "ai", "1inch"]
+homepage = "https://ohmynova.dev/"
+repository = "https://github.com/nova-sdk/nova"
+packages = [
+    { include = "nova_plugins/inch1" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.8.6"
+nova-sdk = "^0.1.1"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.4"
+pytest-asyncio = "^0.25.0"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/nova-sdk/nova/issues"
+
+[tool.pytest.ini_options]
+addopts = [
+  "--import-mode=importlib",
+]
+pythonpath = "src"
+asyncio_default_fixture_loop_scope = "function"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.8.6"
+nova-sdk = { path = "../../nova-sdk", develop = true }
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"

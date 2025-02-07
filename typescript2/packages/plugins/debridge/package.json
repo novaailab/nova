@@ -1,0 +1,41 @@
+{
+    "name": "@nova-sdk/plugin-debridge",
+    "version": "0.0.4",
+    "files": ["dist/**/*", "README.md", "package.json"],
+    "scripts": {
+        "build": "tsup",
+        "clean": "rm -rf dist",
+        "test": "vitest run --passWithNoTests"
+    },
+    "sideEffects": false,
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "dependencies": {
+        "@nova-sdk/core": "workspace:*",
+        "@nova-sdk/wallet-evm": "workspace:*",
+        "viem": "catalog:",
+        "zod": "catalog:"
+    },
+    "peerDependencies": {
+        "@nova-sdk/core": "workspace:*",
+        "@nova-sdk/wallet-evm": "workspace:*",
+        "viem": "catalog:"
+    },
+    "devDependencies": {
+        "@types/node": "^18.0.0",
+        "tsup": "^6.7.0",
+        "typescript": "^5.2.2",
+        "vitest": "^1.6.1"
+    },
+    "homepage": "https://app.debridge.finance/",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nova-sdk/nova.git"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/nova-sdk/nova/issues"
+    },
+    "keywords": ["ai", "agents", "web3", "bridge", "debridge"]
+}

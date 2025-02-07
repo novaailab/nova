@@ -1,0 +1,23 @@
+{
+    "name": "nova-examples-langchain-cosmos",
+    "version": "0.0.4",
+    "description": "",
+    "private": true,
+    "scripts": {
+        "test": "vitest run --passWithNoTests"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "@nova-sdk/adapter-langchain": "workspace:*",
+        "@nova-sdk/plugin-cosmosbank": "workspace:*",
+        "@nova-sdk/wallet-cosmos": "workspace:*",
+        "@nova-sdk/core": "workspace:*",
+        "@cosmjs/cosmwasm-stargate": "^0.33.0",
+        "@langchain/core": "catalog:",
+        "@langchain/cohere": "^0.3.2",
+        "@cosmjs/proto-signing": "^0.32.4",
+        "dotenv": "^16.4.5",
+        "langchain": "^0.3.2"
+    }
+}

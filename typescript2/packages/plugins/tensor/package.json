@@ -1,0 +1,33 @@
+{
+    "name": "@nova-sdk/plugin-tensor",
+    "version": "0.2.14",
+    "files": ["dist/**/*", "README.md", "package.json"],
+    "scripts": {
+        "build": "tsup",
+        "clean": "rm -rf dist",
+        "test": "vitest run --passWithNoTests"
+    },
+    "sideEffects": false,
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "dependencies": {
+        "@nova-sdk/core": "workspace:*",
+        "@nova-sdk/wallet-solana": "workspace:*",
+        "@solana/web3.js": "catalog:",
+        "zod": "catalog:"
+    },
+    "peerDependencies": {
+        "@nova-sdk/core": "workspace:*"
+    },
+    "homepage": "https://ohmynova.dev",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nova-sdk/nova.git"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/nova-sdk/nova/issues"
+    },
+    "keywords": ["ai", "agents", "web3"]
+}

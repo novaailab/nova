@@ -1,0 +1,42 @@
+{
+    "name": "@nova-sdk/crossmint",
+    "version": "0.3.16",
+    "sideEffects": false,
+    "files": ["dist/**/*", "README.md", "package.json"],
+    "scripts": {
+        "build": "tsup",
+        "clean": "rm -rf dist",
+        "test": "vitest run --passWithNoTests"
+    },
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "dependencies": {
+        "@crossmint/common-sdk-base": "0.3.1",
+        "@nova-sdk/wallet-evm": "workspace:*",
+        "@nova-sdk/wallet-solana": "workspace:*",
+        "@solana/web3.js": "catalog:",
+        "abitype": "^1.0.6",
+        "bs58": "^6.0.0",
+        "viem": "catalog:",
+        "zod": "catalog:"
+    },
+    "peerDependencies": {
+        "@nova-sdk/core": "workspace:*"
+    },
+    "homepage": "https://ohmynova.dev",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nova-sdk/nova.git"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/nova-sdk/nova/issues"
+    },
+    "keywords": ["ai", "agents", "web3"],
+    "devDependencies": {
+        "@jest/globals": "29.7.0",
+        "@types/jest": "29.5.14",
+        "jest": "29.7.0"
+    }
+}

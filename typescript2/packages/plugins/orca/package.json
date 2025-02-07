@@ -1,0 +1,38 @@
+{
+    "name": "@nova-sdk/plugin-orca",
+    "version": "0.2.16",
+    "files": ["dist/**/*", "README.md", "package.json"],
+    "scripts": {
+        "build": "tsup",
+        "clean": "rm -rf dist",
+        "test": "vitest run --passWithNoTests"
+    },
+    "sideEffects": false,
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "dependencies": {
+        "@coral-xyz/anchor": "0.29.0",
+        "@nova-sdk/core": "workspace:*",
+        "@nova-sdk/wallet-solana": "workspace:*",
+        "@orca-so/common-sdk": "^0.6",
+        "@orca-so/whirlpools-sdk": "^0.13.12",
+        "@solana/spl-token": "0.4.9",
+        "@solana/web3.js": "catalog:",
+        "decimal.js": "10.4.3",
+        "zod": "catalog:"
+    },
+    "peerDependencies": {
+        "@nova-sdk/core": "workspace:*"
+    },
+    "homepage": "https://ohmynova.dev",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nova-sdk/nova.git"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/nova-sdk/nova/issues"
+    },
+    "keywords": ["ai", "agents", "web3"]
+}

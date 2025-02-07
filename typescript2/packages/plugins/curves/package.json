@@ -1,0 +1,35 @@
+{
+    "name": "@nova-sdk/plugin-curves",
+    "version": "0.0.3",
+    "sideEffects": false,
+    "files": ["dist/**/*", "README.md", "package.json"],
+    "scripts": {
+        "build": "tsup",
+        "clean": "rm -rf dist",
+        "test": "vitest run --passWithNoTests"
+    },
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "dependencies": {
+        "@nova-sdk/core": "workspace:*",
+        "@nova-sdk/wallet-evm": "workspace:*",
+        "abitype": "^1.0.6",
+        "viem": "catalog:",
+        "zod": "catalog:"
+    },
+    "peerDependencies": {
+        "@nova-sdk/core": "workspace:*",
+        "@nova-sdk/wallet-evm": "workspace:*"
+    },
+    "homepage": "https://ohmynova.dev",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nova-sdk/nova.git"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/nova-sdk/nova/issues"
+    },
+    "keywords": ["ai", "agents", "web3", "form"]
+}

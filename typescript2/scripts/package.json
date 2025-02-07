@@ -1,0 +1,5 @@
+{
+    "name": "@nova-sdk/scripts",
+    "private": true,
+    "type": "module"
+}

@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "nova-sdk-example-solana-wallet"
+version = "0.1.1"
+description = "nova example for Solana wallet"
+authors = ["Andrea Villa <andreakarimodm@gmail.com>"]
+readme = "README.md"
+keywords = ["nova", "sdk", "solana", "wallet"]
+homepage = "https://ohmynova.dev/"
+repository = "https://github.com/nova-sdk/nova"
+packages = [
+    { include = "example.py" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+solana = ">=0.30.2"
+solders = ">=0.18.0"
+python-dotenv = "^1.0.1"
+nova-sdk = "*"
+nova-sdk-wallet-solana = "*"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/nova-sdk/nova/issues"
+
+[tool.pytest.ini_options]
+addopts = [
+  "--import-mode=importlib",
+]
+pythonpath = "src"
+asyncio_default_fixture_loop_scope = "function"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.8.6"
+nova-sdk = { path = "../../../src/nova-sdk", develop = true }
+nova-sdk-wallet-solana = { path = "../../../src/wallets/solana", develop = true }
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"

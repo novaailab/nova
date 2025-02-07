@@ -1,0 +1,19 @@
+{
+    "name": "nova-examples-vercel-ai-radix",
+    "version": "0.2.17",
+    "description": "",
+    "private": true,
+    "scripts": {
+        "test": "vitest run --passWithNoTests"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@ai-sdk/openai": "^1.0.4",
+        "@nova-sdk/adapter-vercel-ai": "workspace:*",
+        "@nova-sdk/core": "workspace:*",
+        "@nova-sdk/wallet-radix": "workspace:*",
+        "radix-web3.js": "catalog:",
+        "ai": "catalog:",
+        "dotenv": "^16.4.5"
+    }
+}

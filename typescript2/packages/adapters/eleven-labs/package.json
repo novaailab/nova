@@ -1,0 +1,34 @@
+{
+    "name": "@nova-sdk/adapter-eleven-labs",
+    "version": "0.2.8",
+    "sideEffects": false,
+    "files": ["dist/**/*", "README.md", "package.json"],
+    "scripts": {
+        "build": "tsup",
+        "clean": "rm -rf dist",
+        "test": "vitest run --passWithNoTests"
+    },
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "dependencies": {
+        "@nova-sdk/core": "workspace:*"
+    },
+    "peerDependencies": {
+        "@nova-sdk/core": "workspace:*",
+        "zod": "^3.0.0"
+    },
+    "devDependencies": {
+        "zod": "catalog:"
+    },
+    "homepage": "https://ohmynova.dev",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nova-sdk/nova.git"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/nova-sdk/nova/issues"
+    },
+    "keywords": ["ai", "agents", "web3"]
+}

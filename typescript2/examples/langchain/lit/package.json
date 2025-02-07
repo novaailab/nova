@@ -1,0 +1,27 @@
+{
+    "name": "nova-examples-langchain-lit",
+    "version": "0.1.19",
+    "description": "",
+    "private": true,
+    "scripts": {
+        "test": "vitest run --passWithNoTests"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "@nova-sdk/adapter-langchain": "workspace:*",
+        "@nova-sdk/core": "workspace:*",
+        "@nova-sdk/plugin-erc20": "workspace:*",
+        "@nova-sdk/wallet-lit": "workspace:*",
+        "@nova-sdk/wallet-solana": "workspace:*",
+        "@nova-sdk/wallet-evm": "workspace:*",
+        "@langchain/core": "catalog:",
+        "@langchain/openai": "^0.3.5",
+        "@lit-protocol/constants": "catalog:",
+        "@solana/web3.js": "catalog:",
+        "dotenv": "^16.4.5",
+        "langchain": "^0.3.2",
+        "ethers": "5.7.2",
+        "viem": "2.21.49"
+    }
+}

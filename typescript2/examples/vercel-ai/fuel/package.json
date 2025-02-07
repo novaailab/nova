@@ -1,0 +1,21 @@
+{
+    "name": "nova-examples-vercel-ai-fuel",
+    "version": "0.1.8",
+    "description": "",
+    "private": true,
+    "scripts": {
+        "send-eth": "ts-node index.ts",
+        "test": "vitest run --passWithNoTests"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "@ai-sdk/openai": "^1.0.4",
+        "@nova-sdk/adapter-vercel-ai": "workspace:*",
+        "@nova-sdk/core": "workspace:*",
+        "@nova-sdk/wallet-fuel": "workspace:*",
+        "fuels": "0.97.2",
+        "ai": "catalog:",
+        "dotenv": "^16.4.5"
+    }
+}

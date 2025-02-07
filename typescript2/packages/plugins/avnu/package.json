@@ -1,0 +1,40 @@
+{
+    "name": "@nova-sdk/plugin-avnu",
+    "version": "0.1.2",
+    "files": ["dist/**/*", "README.md", "package.json"],
+    "scripts": {
+        "build": "tsup",
+        "clean": "rm -rf dist",
+        "test": "vitest run --passWithNoTests"
+    },
+    "sideEffects": false,
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "description": "",
+    "dependencies": {
+        "@avnu/avnu-sdk": "^3.0.0",
+        "@nova-sdk/core": "workspace:*",
+        "@nova-sdk/wallet-starknet": "workspace:*",
+        "@types/dotenv": "^8.2.3",
+        "dotenv": "^16.4.7",
+        "ethers": "^6.13.4",
+        "get-starknet": "^3.3.3",
+        "starknet": "^6.11.0",
+        "zod": "catalog:"
+    },
+    "peerDependencies": {
+        "viem": "catalog:",
+        "@nova-sdk/core": "workspace:*"
+    },
+    "homepage": "https://ohmynova.dev",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nova-sdk/nova.git"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/nova-sdk/nova/issues"
+    },
+    "keywords": ["ai", "agents", "web3"]
+}

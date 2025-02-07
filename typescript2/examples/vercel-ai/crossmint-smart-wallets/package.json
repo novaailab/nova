@@ -1,0 +1,23 @@
+{
+    "name": "nova-examples-vercel-ai-crossmint-smart-wallets",
+    "version": "0.2.18",
+    "private": true,
+    "description": "",
+    "scripts": {
+        "create-wallet": "ts-node create-smart-wallet.ts",
+        "test": "vitest run --passWithNoTests"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "@ai-sdk/openai": "^1.0.4",
+        "@nova-sdk/adapter-vercel-ai": "workspace:*",
+        "@nova-sdk/core": "workspace:*",
+        "@nova-sdk/plugin-erc20": "workspace:*",
+        "@nova-sdk/crossmint": "workspace:*",
+        "@nova-sdk/wallet-evm": "workspace:*",
+        "ai": "catalog:",
+        "dotenv": "^16.4.5",
+        "viem": "2.21.49"
+    }
+}

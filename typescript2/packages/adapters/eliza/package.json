@@ -1,0 +1,33 @@
+{
+    "name": "@nova-sdk/adapter-eliza",
+    "version": "0.2.7",
+    "sideEffects": false,
+    "files": ["dist/**/*", "README.md", "package.json"],
+    "scripts": {
+        "build": "tsup",
+        "clean": "rm -rf dist",
+        "test": "vitest run --passWithNoTests"
+    },
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "dependencies": {
+        "@ai16z/eliza": "0.1.5-alpha.5",
+        "@nova-sdk/core": "workspace:*",
+        "zod": "catalog:"
+    },
+    "peerDependencies": {
+        "@ai16z/eliza": "0.1.5-alpha.5",
+        "@nova-sdk/core": "workspace:*"
+    },
+    "homepage": "https://ohmynova.dev",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nova-sdk/nova.git"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/nova-sdk/nova/issues"
+    },
+    "keywords": ["ai", "agents", "web3"]
+}

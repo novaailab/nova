@@ -1,0 +1,24 @@
+{
+    "name": "nova-examples-vercel-ai-form-curves",
+    "version": "0.2.15",
+    "description": "",
+    "private": true,
+    "scripts": {
+        "test": "vitest run --passWithNoTests"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "@ai-sdk/openai": "^1.0.4",
+        "@nova-sdk/adapter-vercel-ai": "workspace:*",
+        "@nova-sdk/core": "workspace:*",
+        "@nova-sdk/plugin-erc20": "workspace:*",
+        "@nova-sdk/plugin-uniswap": "workspace:*",
+        "@nova-sdk/plugin-curves": "workspace:*",
+        "@nova-sdk/wallet-evm": "workspace:*",
+        "@nova-sdk/wallet-viem": "workspace:*",
+        "ai": "catalog:",
+        "dotenv": "^16.4.5",
+        "viem": "2.21.49"
+    }
+}
